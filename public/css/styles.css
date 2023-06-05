@@ -1,0 +1,207 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Navbar styles */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #598ebf;
+    display: flex; /* Use flexbox */
+    justify-content: left; /* Center align the flex items horizontally */
+  }
+  .logo-img{
+    height: auto;
+    width: 50px;
+  }
+  li a {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  li a:hover:not(.active) {
+    background-color: #598ebf;
+  }
+  
+  .active {
+    background-color: #5b82bd;
+  }
+  
+  /* Container styles */
+  .container-fluid {
+    margin-top: 2rem;
+  }
+  
+  /* Home text styles */
+  .home-text h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .contact-us{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .contact-us h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .contact-us h2{
+    font-weight: bold;
+    margin-left: 60px;
+    font-size: 22px;
+  }
+  .contact-us a{
+    margin-left: 60px;
+    font-size: 20px;
+  }
+  .about-us{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .about-us h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  .about-us h2{
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .about-us h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .about-us p{
+    font-size: 20px;
+  }
+  .btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #5b82bd;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 150px;
+    margin-top: 70px;
+  }
+
+  
+  .btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  /* Home image styles */
+  .home-text img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+  .contact-img {
+    margin-left: 500px;
+    margin-top: 1px;
+  }
+  .my-form {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    text-align: start;
+  }
+  .my-input {
+    width: 700px;
+    height: 300px;
+    padding: 5px;
+    vertical-align: top;
+    text-align: left;
+    /* Add other styling properties as needed */
+  }
+  .my-button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    background-color: #5b82bd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 400px;
+  }
+  .btn2 {
+    display: block;
+    width: auto;
+    height: 50px;
+    background-color: #5b82bd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 500px;
+  }
+  .submit-text h1{
+    margin-top: 50px;
+    text-align: center;
+  }
+  @media (max-width: 767px) {
+    .home-text.order-md-0,
+    .home-text.order-md-1 {
+      order: 0;
+    }
+  
+    .home-text.order-0,
+    .home-text.order-1 {
+      order: 1;
+    }
+  }
+  

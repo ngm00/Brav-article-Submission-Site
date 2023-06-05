@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  {{> navbar}}
+  <div class="home-text">
+    <h1>Articles</h1>
+  </div>
+      <form action="/submit" method="POST" class= "my-form" enctype="multipart/form-data">
+       <div class="form-group">
+        <p><label for="names">Name of author(s):</label></p> 
+        <input type="text" id="name1" name="name1" placeholder="Name of author(required)" required="required"><br><br>
+        <input type="text" id="name2" name="name2" placeholder="Name of author(optional)"><br><br>
+        <input type="text" id="name3" name="name3" placeholder="Name of author(optional)">
+      </div>
+      <p><label for="w_content">You can write your article here:</label></p> 
+      <div class="form-group">
+        <textarea id="input" name="inputData" placeholder="Enter your article" class="my-input"></textarea>
+       </div> 
+       <div class="form-group">
+      <label for="w_content">Upload article(max.2 MB):</label>
+        <input type="file" name="docpicker"/><br>
+        </div> 
+        <button type="submit" value="Submitted" class="my-button">Submit</button><br><br>
+      </form>
+
+  <script src="../jq/jquery.js" type="text/javascript"></script>
+  <script src="../jq/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
